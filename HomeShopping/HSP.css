@@ -1,0 +1,92 @@
+:root {
+  /* color */
+  --color-black: black;
+  --color-white: white;
+  --color-blue: blue;
+  --color-yellow: yellow;
+  --color-pink: pink;
+  --color-light-grey: #dfdfdf;
+
+  /* size */
+  --base-space: 8px;
+  --size-button: 60px;
+  --size-border: 4px;
+  --size-thumbnail: 50px;
+  --button-font-size: 18px;
+
+  /* annimation */
+  --size-animation-duration: 300ms;
+}
+body {
+  height: 100vh;
+  background-color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform var(--size-animation-duration) ease;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.selectOpt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.selectOpt li {
+  margin: 16px 8px;
+  padding: calc(var(--base-space) * 2);
+  font-size: larger;
+  /* color: white; */
+  border-radius: 8px;
+}
+.selectOpt img {
+  width: var(--size-thumbnail);
+  height: var(--size-thumbnail);
+}
+
+.selectOpt .blue {
+  background-color: blue;
+}
+.selectOpt .yellow {
+  background-color: yellow;
+}
+.selectOpt .pink {
+  background-color: pink;
+}
+.items {
+  /* background-color: var(--color-white); */
+  width: 60%;
+  height: 60%;
+  list-style: none;
+  padding-left: 0;
+  /* stify-content: center; */
+}
+.item {
+  background-color: var(--color-white);
+  display: flex;
+  align-items: center;
+  padding: var(--base-space);
+  margin-bottom: var(--base-space);
+}
+.item_thumbnail {
+  width: var(--size-thumbnail);
+  height: var(--size-thumbnail);
+}
+
+.item_description {
+  margin-left: var(--base-space);
+  font-size: var(--button-font-size);
+}
+
+.hidden {
+  display: none;
+}
