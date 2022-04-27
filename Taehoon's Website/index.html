@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaeWebsite</title>
+    <link rel ="stylesheet" href="style.css">
+    <script src="login.js" defer></script>
+    <script src="clock.js" defer></script>
+    <script src="quote.js" defer></script>
+    <script src="todolist.js" defer></script>
+    <script src="weather.js" defer></script>
+</head>
+<body>
+    <form class="login_form hidden" id="loginform">
+        <input id="login" type="text" placeholder="ID" maxlength="10" required>
+        <button>Login</button>
+        <input id="pwd" type="password" placeholder="password" maxlength="12" minlength="4">
+    </form>
+    <h1 id="greeting" class="hidden" ></h1>
+    <h2 id="clock"></h2>
+    <div id="quote"></div>
+    <span id="author"></span>
+    <form id="todo">
+        <input type="text" placeholder="Write a To Do and press enter">
+    </form>
+    <ul id="todo_list"></ul>
+    
+</body>
+</html>
