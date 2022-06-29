@@ -13,12 +13,14 @@
     <script src="weather.js" defer></script>
 </head>
 <body>
-    <form class="login_form hidden" id="loginform">
+    <section class="login_func" id="login_func">
+        <form class="login_form hidden" id="loginform">
         <input id="login" type="text" placeholder="ID" maxlength="10" required>
         <button>Login</button>
         <input id="pwd" type="password" placeholder="password" maxlength="12" minlength="4">
-    </form>
-    <h1 id="greeting" class="hidden" ></h1>
+    </form></section>
+    <section class="main_contents" id="main_contents">
+        <h1 id="greeting" class="hidden" ></h1>
     <h2 id="clock"></h2>
     <div id="quote"></div>
     <span id="author"></span>
@@ -26,6 +28,9 @@
         <input type="text" placeholder="Write a To Do and press enter">
     </form>
     <ul id="todo_list">memo</ul>
+    </section>
+    
+    
     
 </body>
 </html>
