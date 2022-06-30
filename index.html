@@ -14,7 +14,7 @@
   </head>
   <body>
     <section class="login_func hidden" id="login_func">
-      <form class="login_form hidden" id="loginform">
+      <form class="login_form" id="loginform">
         <div>
           <input
             id="login"
@@ -35,17 +35,20 @@
         />
       </form>
     </section>
-    <section class="main_contents" id="main_contents">
-      <h1 id="greeting" class="hidden"></h1>
-      <h2 id="clock"></h2>
-      <div id="quote"></div>
-      <span id="author"></span>
+
+    <section class="main_contents hidden" id="main_contents">
+      <h1 id="greeting"></h1>
       <form id="todo">
+        <p><b>Memo</b></p>
         <input type="text" placeholder="Write a To Do and press enter" />
       </form>
-      <ul id="todo_list">
-        memo
-      </ul>
+      <ul id="todo_list"></ul>
+      <div class="quotes_authors">
+        <div id="quote"></div>
+        <span id="author"></span>
+      </div>
+
+      <h2 id="clock"></h2>
     </section>
   </body>
 </html>

@@ -1,5 +1,4 @@
-.loginform {
-}
+
 
 .hidden {
   display: none;
@@ -13,18 +12,21 @@
   background-color: gray;
   opacity: 80%;
   padding: 100px 100px;
+  border-radius: 50px;
 
 }
 
 .main_contents{
+  width: 600px;
+  height: 300px;
   color:white;
   background-color: navy;
   position: absolute;
-  top:150px;
+  top:100px;
   left:200px;
-  padding: 150px 150px;
+  padding: 100px 100px;
   opacity: 80%;
-
+  border-radius: 50px;
 }
 
 .main_contents::before{
@@ -34,6 +36,19 @@
   background: linear-gradient( to right, black,transparent);
   position: absolute;
   height: 100%;
-  width: 50%;
+  width: 70%;
+  border-radius: 50px;
   z-index: -1;
 }
+.quotes_authors{
+  position: absolute;
+  bottom: 50px;
+  left: 40px;
+  opacity: 90%;
+}
+#clock{
+  position: absolute;
+  right:50px;
+  top:420px;
+}
+
