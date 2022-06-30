@@ -46,9 +46,15 @@
   left: 40px;
   opacity: 90%;
 }
-#clock{
+.date_time{
   position: absolute;
   right:50px;
-  top:420px;
+  top:50px;
+}
+#clock{
+  margin: 0;
+}
+#currentDate{
+  margin: 5px;
 }
 
